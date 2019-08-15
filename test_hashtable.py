@@ -21,12 +21,13 @@ class TestHashTable():
     def test_get(self):
         print('========== Testing HashTable.get() ==========')
         print('Get item by index ("wind" Expected): {}'.format(self.hashtable.get(2)))
-        print('Get item by index ("solar" Expected): {}'.format(self.hashtable.get(3)))
+        print('Get item by index ("solar" Expected): {}'.format(self.hashtable.get(3)))    
 
     def test_get_item_index(self):
         print('========== Testing HashTable.get_item_index() ==========')
         print('Get index by item ("2" Expected): {}'.format(self.hashtable.get_item_index('wind')))
         print('Get index by item ("3" Expected): {}'.format(self.hashtable.get_item_index('solar')))
+        print('Get index by item ("-1" Expected): {}'.format(self.hashtable.get_item_index('nonexistent item')))
 
     def test_get_number_of_items(self):
         print('========== Testing HashTable.get_number_of_items() ==========')
